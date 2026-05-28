@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D 会社</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/db86999413.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><i class="fa-brands fa-disqus" style="color: rgb(193, 16, 16);"></i> 会社</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        
+<a href="index.html"
+   class="navbar__links"
+   id="nav__home">
+   ホーム
+</a>
+
+<a href="archive.html"
+   class="navbar__links"
+   id="nav__archive">
+   アーカイブ
+</a>
+
+<a href="announcements.html"
+   class="navbar__links"
+   id="nav__announcements">
+   お知らせ
+</a>
+
+<a href="auth.html"
+   class="button"
+   id="nav__signin">
+   サインイン
+</a>
+
+        <div class="language__switch">
+
+            <button onclick="setLanguage('jp')">
+              日本語
+            </button>
+
+            <button onclick="setLanguage('en')">
+              EN
+            </button>
+
+          </div>
+
+      </ul>
+    </div>
+  </nav>
+
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>アーカイブ</h1>
+          <p>近日公開...</p>
+          <button class="main__btn"><a href="#">アーカイブを見る</a></button>
+        </div>
+        <div class="main__img-container">
+          <img src="images/pic3.svg" alt="pic" id="main__img">
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

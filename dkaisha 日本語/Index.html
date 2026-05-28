@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D 会社</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/db86999413.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><i class="fa-brands fa-disqus" style="color: rgb(193, 16, 16);"></i> 会社</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__links">ホーム</a>
+        </li>
+        <li class="navbar__item">
+          <a href="archive.html" class="navbar__links">アーカイブ</a>
+        </li>
+        <li class="navbar__item">
+          <a href="announcements.html" class="navbar__links">お知らせ</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="auth.html" class="button">サインイン</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- ようこそメッセージ -->
+<div id="welcomePopup" class="popup">
+  <div class="popup__content">
+
+    <h2>
+      ログイン成功
+    </h2>
+
+    <p>
+      D 会社 へようこそ
+    </p>
+
+    <button onclick="closePopup()">
+      続ける
+    </button>
+
+  </div>
+</div>
+
+  <!-- ヒーローセクション -->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>D 会社</h1>
+        <h2>お知らせが簡単に</h2>
+        <p>D 会社で最新の企業情報を入手しましょう。簡単かつ効率的な情報発信のための頼れるプラットフォームです。使いやすいインターフェースで、常に最新情報を入手し、つながりを保ちましょう。</p>
+        <button class="main__btn"><a href="announcements.html">はじめる</a></button>
+      </div>
+      <div class="main__image--container">
+        <img src="images/pic1.svg" alt="pic" id="main__img">
+    </div>
+  </div>  
+
+  <!-- お知らせセクション -->
+<div class="announcements">
+      <h1>すべてのお知らせを見る</h1>
+      <div class="announcements__container">
+        <div class="announcements__card">
+          <h2>最新のお知らせを見る</h2>
+          <p>最新情報</p>
+          <button><a href="announcements.html">はじめる</a></button>
+        </div>
+        <div class="announcements__card">
+          <h2>最新アップデートをチェック</h2>
+          <p>新着情報を見る</p>
+          <button><a href="announcements.html">はじめる</a></button>
+        </div>
+      </div>
+    </div>
+
+  <!-- フッターセクション -->
+  <div class="footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"><i class="fa-brands fa-disqus"></i>会社</a>
+          </div>
+          <p class="website__rights">© D 会社 2026. All Rights Reserved.</p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="HTML"
+            >
+              <i class="fab fa-html5"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="CSS"
+            >
+              <i class="fab fa-css3-alt"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="JavaScript"
+            >
+              <i class="fab fa-js"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Git"
+            >
+              <i class="fab fa-git-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

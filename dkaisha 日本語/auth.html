@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D 会社</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/db86999413.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><i class="fa-brands fa-disqus" style="color: rgb(193, 16, 16);"></i> 会社</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        
+<a href="index.html"
+   class="navbar__links"
+   id="nav__home">
+   ホーム
+</a>
+
+<a href="archive.html"
+   class="navbar__links"
+   id="nav__archive">
+   アーカイブ
+</a>
+
+<a href="announcements.html"
+   class="navbar__links"
+   id="nav__announcements">
+   お知らせ
+</a>
+
+<a href="auth.html"
+   class="button"
+   id="nav__signin">
+   サインイン
+</a>
+
+        <div class="language__switch">
+
+            <button onclick="setLanguage('jp')">
+              日本語
+            </button>
+
+            <button onclick="setLanguage('en')">
+              EN
+            </button>
+
+          </div>
+
+      </ul>
+    </div>
+  </nav>
+
+<div class="auth__container">
+
+    <div class="auth__box">
+
+      <div class="auth__logo">
+        D 会社
+      </div>
+
+      <!-- タブ -->
+      <div id="message"></div>
+      <div class="tab__buttons">
+
+        <button
+          type="button"
+          class="tab__btn active"
+          onclick="showLogin()"
+        >
+          ログイン
+        </button>
+
+        <button
+          type="button"
+          class="tab__btn"
+          onclick="showSignup()"
+        >
+          サインアップ
+        </button>
+
+      </div>
+
+      <!-- ログインフォーム -->
+      <div id="login__form">
+
+        <h1>
+          お帰りなさい
+        </h1>
+
+        <p class="subtitle">
+          会社のお知らせにアクセスするにはログインしてください
+        </p>
+
+        <form action="login.php" method="POST">
+
+          <div class="input__group">
+
+            <label>メールアドレス</label>
+
+            <input
+              type="email"
+              name="email"
+              placeholder="メールアドレス"
+              required
+            >
+
+          </div>
+
+          <div class="input__group">
+
+            <label>パスワード</label>
+
+            <input
+              type="password"
+              name="password"
+              placeholder="パスワード"
+              required
+            >
+
+          </div>
+
+          <button type="submit" class="auth__btn">
+            ログイン
+          </button>
+
+        </form>
+
+      </div>
+
+      <!-- サインアップフォーム -->
+      <div id="signup__form" style="display: none;">
+
+        <h1>
+          アカウントを作成
+        </h1>
+
+        <p class="subtitle">
+          会社のお知らせにアクセスするにはアカウントを作成してください
+        </p>
+
+        <form action="signup.php" method="POST">
+
+          
+          <div class="input__group">
+
+            <label>氏名</label>
+
+            <input
+              type="text"
+              name="fullname"
+              placeholder="氏名"
+              required
+            >
+
+          </div>
+
+          <div class="input__group">
+
+            <label>メールアドレス</label>
+
+            <input
+              type="email"
+              name="email"
+              placeholder="メールアドレス"
+              required
+            >
+
+          </div>
+
+          <div class="input__group">
+
+            <label>パスワード</label>
+
+            <input
+              type="password"
+              name="password"
+              placeholder="パスワード"
+              required
+            >
+
+          </div>
+
+          <div class="input__group">
+
+            <label>パスワードの確認</label>
+
+            <input
+              type="password"
+              name="confirm_password"
+              placeholder="パスワードの確認"
+              required
+            >
+
+          </div>
+
+          <button type="submit" class="auth__btn">
+            サインアップ
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+   <script src="app.js"></script>
+</body>
+</html>
